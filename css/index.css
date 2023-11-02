@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+}
+
+body{
+    background-color: #281600;
+}
+section{
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.title{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #e6a90f;
+}
+.title img{
+    width: 18%;
+    margin-bottom: 5%;
+}
+.title h1{
+    font-size: 40px;
+    color: #281600;
+}
+
+.title button{
+    margin: 5%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #c8c7d1;
+    padding: 1% 2.5% 1% 2.5%;
+    border-radius: 30px;
+    background: #281600;
+    border: none;
+    cursor: pointer;
+    transition: font-size 0.3s
+}
+.title button:hover{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.content{
+    display: none;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+.content a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.init_cadastro{
+    flex: 35%;
+    background: #E6A400;
+    animation: cadastro_animation 1s forwards;
+    cursor: pointer;
+    transition: font-size 0.3s, box-shadow 0.3s;
+}
+.init_login{
+    flex:35%;
+    background: #281600;
+    animation: login_animation 1s forwards;
+    cursor: pointer;
+    transition: font-size 0.3s, box-shadow 0.3s;
+}
+.init_login:hover,.init_cadastro:hover{
+    font-size: 32px; /* Tamanho maior do texto ao passar o mouse */
+}
+
+@keyframes cadastro_animation{
+    0%{
+        background: #281600;
+    }
+    100%{
+        background: #E6A400;
+    }
+}
+@keyframes login_animation{
+    0%{
+        background: #E6A400;
+    }
+    100%{
+        background: #281600;
+    }
+}

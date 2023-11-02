@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+    background: #00223a;
+    animation: body_animation 1s forwards;
+}
+
+@keyframes body_animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.btBack{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 15%;
+    /* border: white solid; */
+    
+}
+.btBack img{
+    width: 50px;
+}
+.btBack p{
+    /* border: orange solid; */
+    color: white;
+    margin: 7%
+}
+
+header img {
+    width: 15%;
+    margin-bottom: 5%;
+    margin-top: 2%
+}
+
+section{
+    background-color: #E6A400;
+    justify-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding:  2% 4% 2% 4%;
+    width: 25%;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    margin-bottom: 15%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #281600;
+}
+
+.form{
+    display: flex;
+    flex-flow: column nowrap ;
+}
+
+.form label {
+    font-weight: 500;
+    padding: 3%;
+}
+
+.form input {
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #C8C7D1;
+    border-radius: 8px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #281600;
+    align-items: center;
+    color: #fff;
+    padding: 5%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.4s;
+}
+
+input[type="submit"]:hover {
+    background-color: #281600da;
+}
+
+a{
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: #281600;
+    transition: font-weight 0.3s, font-size 0.3s;
+}
+a:hover{
+    font-size: 16px;
+    font-weight: 600;
+}
+.erro{
+    margin-top: 1%;
+    width: 25%;
+    padding: 1%;
+    background: #C8C7D1;
+    border-radius: 15px;
+}
+
+.erro p{
+    color: #00223a;
+}
+

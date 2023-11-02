@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin-top: 1%;
+}
+h1{
+    margin-left: 2%;
+    font-size: 32px;
+}
+p{
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+section{
+    background: #C8C7D1;
+    margin: 1%;
+    border-radius: 7px;
+    padding: 2%;
+}
+
+form{
+    margin: 1%;
+    font-weight: 500;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ediLabel{
+    width: 30%;
+}
+.editBt{
+    width: 10%;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    border-radius: 7px;
+    padding: 0.5%;
+}
+.toolBar h2{
+    font-size: 18px;
+    color: #C8C7D1;
+    margin-bottom: 2%;
+}
+input[type="submit"], button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    color: #C8C7D1;
+    font-weight: 600;
+    font-size: 15px;
+    background: rgb(75, 75, 75);
+    border: none;
+    transition: background 0.3s ease;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #333333;
+}
+.cleanAll{
+    justify-content:center;
+}
+
+.cleanAll div{
+    width: 30%;
+    margin-right: 10%;
+}
+
+.cleanAllBt{
+    background: #b70303; 
+    color:white;
+}
+.erro{
+    display: none;
+    text-align: center;
+    margin-top: 1%;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    width: 25%;
+    padding: 1%;
+    background: #281600;
+    border-radius: 15px;
+    z-index: 9999;
+}
+
+.erro p{
+    color: #ffffff;
+}

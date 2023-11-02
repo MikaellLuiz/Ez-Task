@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin-top: 1%;
+}
+h1{
+    margin-left: 2%;
+}
+
+.toolBar{
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 1%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: #00223A;
+}
+
+.toolBar form{
+    margin: 1%;
+    font-weight: 500;
+    color: #C8C7D1;
+    width: 50%;
+}
+
+#input, #inputDescription{
+    border-radius: 7px;
+    padding: 0.5%;
+}
+#input{
+    width: 30%
+}
+#inputBt{
+    max-width: 18%;
+    min-width: 18%;
+}
+
+#inputDescription{
+    width:80%;
+}
+
+#formSearch{
+    width: 100%;
+}
+#formSearch h2, #formSearch label{
+    color: black
+}
+#formSearch #inputDescription{
+    color: black;
+    width: 40%;
+}
+
+#formSearch #input{
+    color: black;
+    width: 16%;
+}
+.toolBar h2{
+    font-size: 18px;
+    color: #C8C7D1;
+    margin-bottom: 2%;
+}
+input[type="submit"], button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    color: #C8C7D1;
+    font-weight: 600;
+    font-size: 15px;
+    background: rgb(75, 75, 75);
+    border: none;
+    transition: background 0.3s ease;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #333333;
+}
+.showTasks{
+    background: #C8C7D1;
+    margin: 1%;
+    border-radius: 7px;
+}
+.showTasks table {
+    padding: 0.5%;
+    margin: 1%;
+    border-collapse: collapse;
+    width: 98%;
+    background: #C8C7D1;
+    border-radius: 7px;
+}
+tr{
+    border-bottom:#333333 solid 0.5px;
+    padding: 1%; 
+}
+td{
+    padding: 0.5%;
+    border-right:#333333 solid 0.5px; 
+    text-align: center;
+}
+.button{
+    border:none;
+}
+
+.showTasks th:nth-child(1), .showTasks td:nth-child(1) {
+    width: 10%; 
+}
+
+.showTasks th:nth-child(2), .showTasks td:nth-child(2) {
+    width: 43%; 
+}
+
+.showTasks th:nth-child(3), .showTasks td:nth-child(3) {
+    width: 20%; 
+}
+.showTasks th:nth-child(4), .showTasks td:nth-child(4) {
+    width: 10%; 
+}
+.erro{
+    display: none;
+    text-align: center;
+    margin-top: 1%;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    width: 25%;
+    padding: 1%;
+    background: #E6A400;
+    border-radius: 15px;
+    z-index: 9999;
+    transform: translateX(-50%)
+}
+
+.erro p{
+    color: #281600;
+}
+
